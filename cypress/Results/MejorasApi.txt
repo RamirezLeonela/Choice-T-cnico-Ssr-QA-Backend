@@ -1,0 +1,10 @@
+Documentación más alineada con el comportamiento real
+Problema actual:
+La documentación indica que ante error 401 se espera "Unauthorized", pero la API responde "API KEY is required".
+
+Mejora sugerida:
+Actualizar la documentación para reflejar los mensajes de respuesta reales o ajustar 
+la API para que coincida con la documentación oficial.
+
+Beneficio:
+Aumenta la confiabilidad y consistencia de la API, evitando errores en ambientes de QA o producción.

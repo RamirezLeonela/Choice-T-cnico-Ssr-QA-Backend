@@ -1,0 +1,24 @@
+1. Bug: Mensaje de error inconsistente en /v1/qa/test3
+Nombre del Bug:
+Mensaje de error no coincide con documentación 
+Tipo:
+Bug (Inconsistencia de mensaje)
+
+Descripción:
+Según la documentación del endpoint /v1/qa/test3, una solicitud 
+sin autorización debería devolver un error 401 con un mensaje genérico como "Unauthorized".
+Sin embargo, el cuerpo de la respuesta muestra:
+"message": "API KEY is required"
+Esto puede causar confusión al consumir la API.
+
+Pasos para reproducir:
+
+Hacer una solicitud GET a https://echo-serv.tbxnet.com/v1/qa/test3 sin incluir cabecera authorization.
+
+Observar el mensaje en el body de la respuesta.
+
+Resultado esperado:
+Status 401 con mensaje "Unauthorized" (como indica la documentación).
+
+Resultado actual:
+Status 401 con mensaje "API KEY is required"

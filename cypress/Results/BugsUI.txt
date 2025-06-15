@@ -1,0 +1,68 @@
+Reporte de  la plataforma de ecommerce Automation Exercise https://automationexercise.com/
+
+1- Bug / Mejora: No existe opción para recuperar contraseña
+ Nombre del Bug / Mejora:
+ Falta la opción de "¿Olvidaste tu contraseña?" en el formulario de login
+
+ Tipo:
+ Mejora (Funcionalidad esperada)
+ Bug (Comportamiento incompleto)
+ Descripción
+ En la página de inicio de sesión del sitio https://automationexercise.com, 
+ no se ofrece al usuario ninguna forma de recuperar su contraseña en caso de olvido.
+ Esta es una funcionalidad estándar en cualquier sitio que requiera autenticación.
+ 
+Pasos para verificar
+Ir a https://automationexercise.com
+Hacer clic en Signup / Login
+Observar que debajo del formulario de inicio de sesión no hay enlace para recuperar contraseña
+
+Resultado Esperado
+El formulario de inicio de sesión debería incluir un enlace con el texto "¿Olvidaste tu contraseña?" 
+que permita recuperar el acceso mediante email u otra verificación.
+
+Resultado Actual
+No hay opción disponible para recuperar la contraseña, lo que impide el acceso en caso de olvido.
+
+2 - Bug / Mejora: Falta de validaciones en el formulario de pago
+Nombre del Bug / Mejora:
+Campos del formulario de pago permiten datos inválidos
+
+Tipo:
+Mejora (Validación esperada en inputs)
+Bug (Formulario permite envío de datos erróneos)
+
+Descripción:
+Durante el proceso de compra, en el paso donde se ingresan los datos de tarjeta, 
+se permite al usuario ingresar información inválida en todos los  campos del formulario. 
+Esto puede generar errores en el procesamiento del pago .
+
+Pasos para verificar:
+Ir a https://automationexercise.com
+Añadir un producto al carrito
+Proceder al checkout hasta llegar al formulario de pago
+Ingresar los siguientes datos inválidos:
+Números en el campo de nombre (ej: "12345")
+Un valor de mes fuera del rango válido (ej: "25")
+Un año con más de 4 dígitos (ej: "202512345")
+Más de 16 dígitos en el número de tarjeta (ej: "12345678901234567890")
+
+Resultado Esperado:
+El formulario debería validar:
+Que el nombre contenga solo letras
+Que el mes esté entre 1 y 12
+Que el año sea un número de 4 dígitos
+Que el número de tarjeta no exceda los 16 dígitos (estándar internacional)
+Se deberían mostrar mensajes de error amigables si los datos son inválidos.
+
+Resultado Actual:
+El formulario acepta todos los datos ingresados sin advertencias ni restricciones.
+No se muestra ningún mensaje de error.
+Es posible enviar la información incluso con errores.
+
+
+
+
+
+
+
