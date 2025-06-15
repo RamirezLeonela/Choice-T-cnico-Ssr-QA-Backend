@@ -1,0 +1,32 @@
+Mejora 1: Recuperación de contraseña
+Situación actual:
+No existe opción para que el usuario recupere su contraseña si la olvida.
+
+Sugerencia:
+Agregar un enlace "¿Olvidaste tu contraseña?" en el formulario de login que permita 
+al usuario restablecerla mediante correo electrónico.
+
+Mejora 2: Validación de formulario de pago
+Situación actual:
+El formulario de tarjeta de crédito permite datos incorrectos como letras en el nombre, 
+meses inválidos (ej. 25), años demasiado largos y más de 16 dígitos en el número de tarjeta.
+
+Sugerencia:
+Aplicar validaciones a cada campo del formulario:
+
+Solo letras en nombre
+Mes entre 1 y 12
+Año con 4 dígitos
+Número de tarjeta con máximo 16 dígitos
+
+Mejora 3: Eliminar el cartel flotante amarillo sobre los productos
+Nombre del Bug / Mejora:
+Cartel amarillo emergente al pasar el mouse sobre productos interfiere con la experiencia de usuario
+
+Tipo:
+Mejora (Usabilidad)
+
+Descripción:
+En la vista de productos, al pasar el cursor por encima de un artículo aparece un cartel flotante amarillo 
+con botones como “Add to cart” . Esta superposición resulta molesta visualmente, 
+especialmente cuando se navega entre varios productos rápidamente

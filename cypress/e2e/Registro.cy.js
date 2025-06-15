@@ -9,7 +9,7 @@ describe('Registro de nuevo usuario', () => {
     // Paso 3: Llenar nombre y correo aleatorio
     const correo = `usuario${Date.now()}@correo.com`; //  Declaración antes de usar
     cy.get("[data-qa='signup-name']").type('Leonella ');
-    cy.get("[data-qa='signup-email']").type(correo);
+    cy.get("[data-qa='signup-email']").type(correo); // Usar la variable declarada
     cy.get("[data-qa='signup-button']").click();
 
     // Paso 4: Llenar los campos obligatorios del formulario
